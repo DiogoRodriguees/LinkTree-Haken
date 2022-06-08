@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --darkColor: #000B0D;
+    --ligthColor: #1C8394;
+    /* --darkColor: #193461;
+    --ligthColor: #E3FBFF; */
+}
+
+body {
+    font-family: "Roboto Slab";
+    background-color: var(--ligthColor);
+}
+
+.parag {
+    color: #55c1d4;
+    font-size: 12px;
+}
+.parag-after{
+    color: var(--darkColor);
+    font-size: 12px;
+}
+
+.darkMode{
+    background-color: var(--darkColor);
+}
+
+.btnDarkMode{
+    color: white;
+    border-radius: 100%;
+    margin-right: 20px;
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+    padding: 0px 8px;
+    border: none;
+    background-color: red;
+}
+
+.btnDarkMode:hover{
+    box-shadow: 0px 0px 20px green;
+}
+
+.btnDarkMode-after {
+    background-color: green;
+
+}
+
+.cabecalho {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 70vh;
+    width: 30vw;
+    border-radius: 5px;
+    padding: 30px 15px;
+    margin: 50px auto;
+    border: 2px solid var(--darkColor);
+
+}
+
+.container-after {
+    border: 2px solid var(--ligthColor);
+}
+
+
+.imgPerfil {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    height: 120px;
+    width: 120px;
+    user-select: none;
+}
+
+.nomeUsuario {
+    font-size: 16px;
+    user-select: none;
+    color: var(--darkColor);
+}
+
+.msgPerfil {
+    font-size: 16px;
+    margin: 20px;
+    color: var(--darkColor);
+    text-align: center;
+    user-select: none;
+}
+
+.botoesClicaveis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao {
+    border: none;
+    background-color:var(--darkColor);
+    color: #55c1d4;
+    width: 20vw;
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: "Roboto Slad";
+}
+
+.botao:hover {
+    transition: 0.75s;
+    transform: scale(1.2);
+}
+
+.botao-after {
+    color: var(--darkColor);
+    background-color: #55c1d4;
+}
+
+.redesSociais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100vw;
+    padding: 15px;
+    margin-bottom: 0px;
+    user-select: none;
+}
+
+.logoRedes{
+    width: 50px;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.muda-letra {
+    color: #55c1d4 ;
+}
