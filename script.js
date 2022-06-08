@@ -26,7 +26,7 @@ const msgDarkModeDesligado = () => {
     msgDarkMode.textContent = "Ligar Dark Mode?"
 }
 
-const ativaDarkMode = () => {
+const ligarDarkMode = () => {
     body.classList.add('darkMode')
     msgPerfil.classList.add('muda-letra')
     nomeUsuario.classList.add('muda-letra')
@@ -35,7 +35,7 @@ const ativaDarkMode = () => {
     botoes.forEach((botoes) => botoes.classList.add('botao-after'))
 }
 
-const desativaDarkMode = () => {
+const desligarDarkMode = () => {
     body.classList.remove('darkMode')
     msgPerfil.classList.remove('muda-letra')
     nomeUsuario.classList.remove('muda-letra')
@@ -46,7 +46,7 @@ const desativaDarkMode = () => {
 
 const darkMode = () => {
     apagaMsg();
-    statusDarkMode ? desativaDarkMode() : ativaDarkMode();
+    statusDarkMode ? desligarDarkMode() : ligarDarkMode();
     statusDarkMode = alteraStatusDarkMode();
 }
 
