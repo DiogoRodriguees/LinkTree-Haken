@@ -7,8 +7,9 @@
 }
 
 :root {
-    --darkColor: #000B0D;
-    --ligthColor: #1C8394;
+    --darkColor: #fff;
+    --ligthColor: #000;
+    --corAtual: #fff;
     /* --darkColor: #193461;
     --ligthColor: #E3FBFF; */
 }
@@ -19,11 +20,11 @@ body {
 }
 
 .parag {
-    color: #55c1d4;
+    color: #fff;
     font-size: 12px;
 }
 .parag-after{
-    color: var(--darkColor);
+    color: #000;
     font-size: 12px;
 }
 
@@ -52,6 +53,13 @@ body {
 
 }
 
+.img-dia {
+    /* opacity: 50%; */
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
 .cabecalho {
     width: 100%;
     height: 40px;
@@ -79,13 +87,17 @@ body {
     border: 2px solid var(--ligthColor);
 }
 
-
 .imgPerfil {
     border-radius: 50%;
     margin-bottom: 10px;
     height: 120px;
     width: 120px;
     user-select: none;
+    border: 2px solid var(--darkColor);
+}
+
+.imgPerfil-after {
+    border: 2px solid var(--ligthColor);
 }
 
 .nomeUsuario {
@@ -110,24 +122,31 @@ body {
 }
 
 .botao {
-    border: none;
-    background-color:var(--darkColor);
-    color: #55c1d4;
+    color: var(--darkColor);
+    background-color: transparent;
+
     width: 20vw;
     padding: 10px;
+
     border-radius: 3px;
+    border: none;
+    border: 2px solid var(--darkColor);
+    
     font-size: 20px;
     font-family: "Roboto Slad";
 }
 
 .botao:hover {
-    transition: 0.75s;
+    transition: 0.5s;
     transform: scale(1.2);
+    background-color: rgb(85, 145, 236);
+
 }
 
 .botao-after {
-    color: var(--darkColor);
-    background-color: #55c1d4;
+    color: var(--ligthColor);
+    border: 2px solid var(--ligthColor);
+    /* background-color: var(--ligthColor); */
 }
 
 .redesSociais{
@@ -154,5 +173,5 @@ body {
 }
 
 .muda-letra {
-    color: #55c1d4 ;
+    color: var(--ligthColor) ;
 }
