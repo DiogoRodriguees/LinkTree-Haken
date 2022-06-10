@@ -4,14 +4,12 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 :root {
     --darkColor: #fff;
     --ligthColor: #000;
-    --corAtual: #fff;
-    /* --darkColor: #193461;
-    --ligthColor: #E3FBFF; */
 }
 
 body {
@@ -20,7 +18,7 @@ body {
 }
 
 .parag {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 12px;
 }
 .parag-after{
@@ -34,84 +32,100 @@ body {
 
 .btnDarkMode{
     color: white;
-    border-radius: 100%;
+    border-radius: 2px;
     margin-right: 20px;
     margin-top: 5px;
+    font-size: 12px;
     height: 20px;
-    width: 20px;
-    padding: 0px 8px;
-    border: none;
-    background-color: red;
+    width: 90px;
+    padding: 0px;
+    background-color: transparent;
+    border: 1px solid var(--darkColor);
 }
 
 .btnDarkMode:hover{
-    box-shadow: 0px 0px 20px green;
+    width: 120px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 20px white;
 }
 
 .btnDarkMode-after {
-    background-color: green;
-
+    border: 1px solid var(--ligthColor);
 }
 
 .img-dia {
-    /* opacity: 50%; */
-    height: 100%;
     width: 100%;
-    position: absolute;
+    height: 100%;
     z-index: -1;
+    position: absolute;
 }
 .cabecalho {
-    width: 100%;
-    height: 40px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     align-items: center;
     gap: 10px;
-    justify-content: flex-end;
+
+    width: 100%;
+    height: 40px;
 }
 
 .container {
+    border: 1px solid var(--darkColor);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur( 50.5px );
+    -webkit-backdrop-filter: blur(50.5px );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    width: 27vw;
     height: 70vh;
-    width: 30vw;
-    border-radius: 5px;
+    margin: 30px auto;
     padding: 30px 15px;
-    margin: 50px auto;
-    border: 2px solid var(--darkColor);
 
 }
 
-.container-after {
-    border: 2px solid var(--ligthColor);
+.container-darkModeAtivo {
+    border: 1px solid var(--ligthColor);
+    background: rgba(145, 145, 145, 0.35);
+    backdrop-filter: blur( 50.5px );
+    -webkit-backdrop-filter: blur(50.5px );
 }
 
 .imgPerfil {
-    border-radius: 50%;
-    margin-bottom: 10px;
     height: 120px;
     width: 120px;
+    margin-bottom: 10px;
+
     user-select: none;
+    border-radius: 50%;
     border: 2px solid var(--darkColor);
 }
 
-.imgPerfil-after {
+.imgPerfil-darkModeAtivo {
     border: 2px solid var(--ligthColor);
 }
 
 .nomeUsuario {
     font-size: 16px;
+    font-weight: 400;
     user-select: none;
     color: var(--darkColor);
 }
 
 .msgPerfil {
-    font-size: 16px;
     margin: 20px;
-    color: var(--darkColor);
-    text-align: center;
     user-select: none;
+    
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+    color: var(--darkColor);
 }
 
 .botoesClicaveis {
@@ -122,54 +136,33 @@ body {
 }
 
 .botao {
-    color: var(--darkColor);
-    background-color: transparent;
-
     width: 20vw;
-    padding: 10px;
-
-    border-radius: 3px;
-    border: none;
-    border: 2px solid var(--darkColor);
+    padding: 10px ;
     
-    font-size: 20px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 500;
     font-family: "Roboto Slad";
+    color: var(--darkColor);
+    
+    border-radius: 3px;
+    border: 1px solid var(--darkColor);
+    background-color: transparent;
+}
+
+.botao:focus {
+    outline-color: rgb(85, 145, 236) ;
 }
 
 .botao:hover {
     transition: 0.5s;
     transform: scale(1.2);
     background-color: rgb(85, 145, 236);
-
 }
 
-.botao-after {
+.botao-darkModeAtivo {
     color: var(--ligthColor);
     border: 2px solid var(--ligthColor);
-    /* background-color: var(--ligthColor); */
-}
-
-.redesSociais{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    width: 100vw;
-    padding: 15px;
-    margin-bottom: 0px;
-    user-select: none;
-}
-
-.logoRedes{
-    width: 50px;
-}
-
-.rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 120px;
 }
 
 .muda-letra {
