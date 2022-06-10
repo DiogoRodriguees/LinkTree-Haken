@@ -21,7 +21,6 @@ const imgs = [
     {'id' : '1', 'url' : './img/noite.jpg'}
 ]
 
-
 // Funções com uma linha
 const apagaMsg = () => msgDarkMode.textContent = "";
 const ativaMsg = () => statusDarkMode ? msgDarkModeLigado() : msgDarkModeDesligado();
