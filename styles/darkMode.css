@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+
+.btnDarkMode{
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    font-family: "Roboto Slad";
+
+    width: 90px;
+    height: 20px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-right: 20px;
+    
+    border: 1px solid var(--branco);
+    border-radius: 2px;
+    background: rgba(142, 186, 243, 0.35);
+}
+
+.btnDarkMode-darkModeAtivo {
+    border: 1px solid var(--preto);
+}
+
+
+.container-darkModeAtivo {
+    border: 1px solid var(--preto);
+    background: rgba(80, 76, 128, 0.151);
+    backdrop-filter: blur(13.5px );
+    -webkit-backdrop-filter: blur(80.5px );
+}
+
+.imgPerfil-darkModeAtivo {
+    border: 2px solid var(--preto);
+}
+
+/* Cor das letras com darkMode ativo */
+.muda-letra {
+    color: var(--preto) ;
+}
+
+.botao-darkModeAtivo {
+    color: var(--preto);
+    border: 2px solid var(--preto);
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --preto: #000;
+    --branco: #fff;
+}
+
+.btnDarkMode:hover{
+    width: 120px;
+    box-shadow: 0px 0px 20px white;
+    border-radius: 2px
+}
+
+.img-background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.cabecalho {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 40px;
+}
+
+/* Style da div main */
+.container {
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 27vw;
+    height: 70vh;
+    margin: 30px auto;
+    padding: 30px 15px;
+    
+    border: 1px solid var(--branco);
+    background: rgba(142, 186, 243, 0.35);
+    /* box-shadow: 0 8px 32px 0 rgba(250, 250, 250, 0.37); */
+    border-radius: 5px;
+    backdrop-filter: blur( 3.5px );
+    -webkit-backdrop-filter: blur(3.5px );
+}
+
+.imgPerfil {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+
+    border: 2px solid var(--branco);
+    user-select: none;
+    border-radius: 50%;
+}
+
+.nomeUsuario {
+    font-size: 22px;
+    font-weight: 200;
+    font-family: "Roboto Slad";
+    
+    color: var(--branco);
+    user-select: none;
+}
+
+.msgPerfil {
+    margin: 20px;
+    user-select: none;
+    
+    color: var(--branco);
+    font-size: 19px;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Roboto Slad";
+}
+
+/* Style da div section */
+.botoesClicaveis {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botao {
+    width: 20vw;
+    padding: 10px ;
+    
+    color: var(--branco);
+    font-size: 23px;
+    text-align: center;
+    font-weight: 500;
+    font-family: "Roboto Slad";
+    
+    border: 1px solid var(--branco);
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.botao:focus {
+    outline-color: rgb(85, 145, 236) ;
+}
+
+.botao:hover {
+    transform: scale(1.2);
+    transition: 0.5s;
+    background-color: rgb(85, 145, 236);
+}
+
+@media (max-width: 600px)
+{
+    .container {
+        width:80vw;
+    }
+
+    .botao{
+        width: 100%;
+    }
+}
